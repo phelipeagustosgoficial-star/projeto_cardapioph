@@ -36,6 +36,10 @@ try {
 </head>
 
 <body>
+    <?php 
+        // include do header(menu)
+        require_once 'includes/header.php';
+    ?>    
     <main>
         <h1>Cardápio Digital</h1>
 
