@@ -7,14 +7,10 @@ define('SENHA', '');
 define('BANCO', 'db_cardapio_digital');
 
 try {
-    $conexao = new PDO(
-        "mysql:host=" . SERVIDOR . ";dbname=" . BANCO . ";charset=utf8",
-        USUARIO,
-        SENHA
-    );
+    $conexao = new PDO("mysql:host=" . SERVIDOR . ";dbname=" . BANCO . ";charset=utf8", USUARIO, SENHA);
 
     $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // echo "conectado com sucesso!";
+    //  echo "Conectado com sucesso!";
 } catch (PDOException $erro) {
     echo "Erro ao conectar no banco de dados" . $erro->getMessage();
 }
