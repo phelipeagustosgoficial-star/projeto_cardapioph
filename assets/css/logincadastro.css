@@ -1,0 +1,65 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    
+    min-height: 100vh; 
+    
+
+    display: flex; 
+    
+   
+    justify-content: center; 
+    
+    align-items: center; 
+    
+    
+    background-color: #000000; 
+}
+
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.card h2 {
+    color: #555;
+    font-weight: 400;
+}
+
+
+.form-control {
+    background-color: #f1f3f5; 
+    border: 1px solid #ced4da;
+    padding: 0.6rem;
+}
+
+
+.btn-login {
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+}
+
+.btn-login:hover {
+    background-color: #0000cc;
+    color: white;
+}
+
+
+.link-custom {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #0d6efd;
+}
+
+.link-custom:hover {
+    text-decoration: underline;
+}
