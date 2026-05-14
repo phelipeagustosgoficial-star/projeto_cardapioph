@@ -16,7 +16,13 @@ try {
         $senha_hash_banco = $dados['senha'];
 
         if(password_verify($senha,$senha_hash_banco)){
-           
+        // senha collator_create
+        // inciar a sessão(troca de dados em paginas diferentes)
+        session_start();
+        // cria uma variavel de sassao
+        $_SESSION['logado'] = "sim";
+
+
         header("location: ../produto-lista.php");
         }else{
             // Senha Invalida
