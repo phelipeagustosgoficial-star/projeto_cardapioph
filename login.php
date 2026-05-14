@@ -17,7 +17,7 @@
                     </div>
                     
                     <div class="card-body p-4">
-                        <form method="post" action="backend/login.php">
+                        <form method="post" action="backend/valida-login.php">
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
