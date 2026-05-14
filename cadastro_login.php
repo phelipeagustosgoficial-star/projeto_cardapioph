@@ -14,20 +14,20 @@
                         <h4 class="mb-0">Criar Conta</h4>
                     </div>
                     <div class="card-body p-4">
-                        <form>
+                        <form action="backend/cadastrar-login.php" method="post">
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                                <input type="text" class="form-control" id="nome" name="nome" required >
                             </div>
 
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="senha" class="form-label">Senha</label>
-                                <input type="password" class="form-control" id="senha">
+                                <input type="password" class="form-control" id="senha" name="senha" required>
                             </div>
 
                             <div class="d-grid mt-4">
