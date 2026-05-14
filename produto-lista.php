@@ -1,13 +1,7 @@
 <?php
-// include do arquivo de conexao
 
-// inciar a session
-
-session_start();
-// verifica variavel de sessao "Logado" e seu valor "sim"
-if($_SESSION['logado']!='sim'){
-    header("Location: login.php");
-}
+// proteção de sseão da pagina
+require_once 'backend/sessao.php';
 
 require_once 'backend/conexao.php';
 
